@@ -1,0 +1,44 @@
+﻿<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit a Claim</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Submit a Claim</h1>
+        <form action="/submit-claim" method="post" enctype="multipart/form-data">
+
+            <div class="form-group">
+                <label for="lecturerName">Lecturer Name</label>
+                <input type="text" id="lecturerName" name="lecturerName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lecturerSurname">Lecturer Surname</label>
+                <input type="text" id="lecturerSurname" name="lecturerSurname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="hoursWorked">Hours Worked</label>
+                <input type="number" id="hoursWorked" name="hoursWorked" min="0" step="0.01" required>
+            </div>
+
+            <div class="form-group">
+                <label for="hourlyRate">Hourly Rate</label>
+                <input type="number" id="hourlyRate" name="hourlyRate" min="0" step="0.01" required>
+            </div>
+
+            <div class="form-group">
+                <label for="supportingDocument">Supporting Document</label>
+                <input type="file" id="supportingDocument" name="supportingDocument" required>
+            </div>
+
+            <button type="submit">Submit Claim</button>
+        </form>
+    </div>
+
+</body>
+</html>
